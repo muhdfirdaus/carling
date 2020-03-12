@@ -1,0 +1,13 @@
+
+			^XA
+			^CF0,80
+			^FO10,10^FDM004142.10.1.SB_L^FS
+			
+			^FO10,90^FDBEY0006^FS
+			^FO8,90^FDBEY0006^FS
+			^FO10,92^FDBEY0006^FS
+			
+			^FO10,170^FD10/10/18^FS
+			
+			
+			^XZ
