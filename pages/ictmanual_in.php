@@ -29,6 +29,7 @@ if($incompleteData == 0){
 
         mysqli_query($con,"INSERT INTO sn_panel(sn,panel_no,lastUpdate)VALUES('$sn','$panel','$tmstmp')")or die(mysqli_error($con));
         mysqli_query($con,"INSERT INTO ict_test(panel,result,lastUpdate)VALUES('$panel','$result','$tmstmp')")or die(mysqli_error($con));
+        mysqli_query($con,"INSERT INTO manual_ict(user,sn,result,timestamp)VALUES('$id','$sn','$result','$tmstmp')")or die(mysqli_error($con));
     }
     echo "<script type='text/javascript'>alert('Data saved!');</script>";
     echo "<script type='text/javascript'>document.location='ictmanual.php'</script>";
