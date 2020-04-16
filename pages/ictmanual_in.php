@@ -11,7 +11,7 @@ $id = $_SESSION['id'];
 $incompleteData = 0;
 for($i=1; $i<=$limit; $i++){
     
-    $sn=trim($_POST['sn'.$i], " ");
+    $sn=preg_replace('/\s+/', '', $_POST['sn'.$i]);
     $result=trim($_POST['result'.$i], " ");
 
     if(strlen($sn)<=1)
@@ -22,7 +22,7 @@ for($i=1; $i<=$limit; $i++){
 
 if($incompleteData == 0){
     for($i=1; $i<=$limit; $i++){
-        $sn=trim($_POST['sn'.$i], " ");
+        $sn=preg_replace('/\s+/', '', $_POST['sn'.$i]);
         $result=trim($_POST['result'.$i], " ");
         $panel = $id."MP$sn";
         $tmstmp = time();

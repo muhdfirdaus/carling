@@ -109,6 +109,7 @@ endif;
                                         <!-- <option value="CA-942-10048-002">CA-942-10048-002</option> -->
                                         <option value="CA-942-10049">CA-942-10049-E</option>
                                         <!-- <option value="CA-942-10048-002">CA-942-10048-002</option> -->
+                                        <option value="CA-942-10067-003">CA-942-10067-003</option>
                                     </select>
                                 </td>
                             </tr>
@@ -199,6 +200,7 @@ endif;
             // if(model=="CA-942-10048-002"){ noprod = 600;}
             if(model=="CA-942-10048-001"){ noprod = 600; rev_no="00";rev="H";desc="SWITCH MODULE LIN SLAVE";}
             if(model=="CA-942-10049"){ noprod = 600;rev_no="04"; rev="E";desc="SLAVE CARRIER BOARD (Rev E)";}
+            if(model=="CA-942-10067-003"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - White Indicators (Rev.G)";}
             
             document.getElementById("qty").value = noprod;
             document.getElementById("rev").value = rev;
