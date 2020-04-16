@@ -104,6 +104,7 @@ endif;
                                         <option value="CA-942-10047-001">CA-942-10047-001</option>
                                         <option value="CA-942-10047-002">CA-942-10047-002</option>
                                         <option value="CA-942-10047-003">CA-942-10047-003</option>
+                                        <option value="CA-942-10047-101">CA-942-10047-101</option>
                                         <!-- <option value="CA-946-10053-001">CA-946-10053-001</option> -->
                                         <option value="CA-942-10048-001">CA-942-10048-001</option>
                                         <!-- <option value="CA-942-10048-002">CA-942-10048-002</option> -->
@@ -143,7 +144,7 @@ endif;
                         <br><br>
 
                         <div>
-                            <button id="btn_start" name="btn_start" style="display: block; margin: 0 auto;" class="btn btn-primary">Start</button>
+                            <button disabled id="btn_start" name="btn_start" style="display: block; margin: 0 auto;" class="btn btn-primary">Start</button>
                         </div>
 
                         </form>
@@ -187,7 +188,7 @@ endif;
         });
 
         $('#model').on('change',function(){
-          
+            
             model = $("#model").val();
             
             if(model=="null"){ noprod = ""; rev=""; rev_no="";desc="";}
@@ -195,6 +196,7 @@ endif;
             if(model=="CA-942-10047-002"){ noprod = 300; rev_no="02";rev="J"; desc="LIN SWITCH GREEN FUNCTION LED REV.J ( SWITCH MODULE -LIN SLAVE )";}
             // if(model=="CA-942-10047-002"){ noprod = 300;}
             if(model=="CA-942-10047-003"){ noprod = 300; rev_no="01";rev="J";desc="LIN Switch No Function LED Rev.J (SWITCH MODULE - LIN SLAVE)";}
+            if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="H"; desc="942-10047-101_H (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10046-003"){ noprod = 400; rev_no="01";rev="M";desc="LIN MASTER MODULE Bom Rev.M (Note : set as Phantom)";}
             // if(model=="CA-946-10053-001"){ noprod = 600;}
             // if(model=="CA-942-10048-002"){ noprod = 600;}
@@ -207,6 +209,16 @@ endif;
             document.getElementById("rev_no").value = rev_no;
             document.getElementById("desc").value = desc;
         });
+        $('#wo').on('keyup',function(){
+            
+            var lenWO = $("#wo").val().length;
+            if(lenWO != 7){ 
+                document.getElementById("btn_start").disabled = true;
+            }
+            else{
+                document.getElementById("btn_start").disabled = false;
+            }
+      });
         
         </script>
 
