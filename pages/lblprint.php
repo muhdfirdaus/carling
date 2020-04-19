@@ -44,6 +44,10 @@ elseif(strpos($model, '10049')!== false){
 elseif(strpos($model, '10048-001')!== false){
     $desc = "^A0N,20,20^FO350,380^FDSWITCH MODULE LIN SLAVE^FS ";
 }
+elseif(strpos($model, '10067-001')!== false){
+    $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
+    ^A0N,20,20^FO350,405^FDHalo - Red Indicators (Rev.G)^FS  ";
+}
 elseif(strpos($model, '10067-003')!== false){
     $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
     ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.G)^FS  ";
