@@ -106,8 +106,8 @@ endif;
                                         <option value="CA-942-10047-003">CA-942-10047-003</option>
                                         <option value="CA-942-10047-101">CA-942-10047-101</option>
                                         <!-- <option value="CA-946-10053-001">CA-946-10053-001</option> -->
-                                        <option value="CA-942-10048-001">CA-942-10048-001</option>
-                                        <!-- <option value="CA-942-10048-002">CA-942-10048-002</option> -->
+                                        <!-- <option value="CA-942-10048-001">CA-942-10048-001</option> -->
+                                        <option value="CA-942-10048-002">CA-942-10048-002</option>
                                         <option value="CA-942-10049">CA-942-10049-E</option>
                                         <!-- <option value="CA-942-10048-002">CA-942-10048-002</option> -->
                                         <option value="CA-942-10067-001">CA-942-10067-001</option>
@@ -117,7 +117,7 @@ endif;
                             </tr>
                             <tr>
                                 <td>No. of products : </td>
-                                <td><input type="text" name="qty" id="qty" class="form-control"  readonly></td>
+                                <td><input type="text" name="qty" id="qty" class="form-control"  ></td>
                             </tr>
                             <tr>
                                 <td>Description : </td>
@@ -200,8 +200,8 @@ endif;
             if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="H"; desc="942-10047-101_H (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10046-003"){ noprod = 400; rev_no="01";rev="M";desc="LIN MASTER MODULE Bom Rev.M (Note : set as Phantom)";}
             // if(model=="CA-946-10053-001"){ noprod = 600;}
-            // if(model=="CA-942-10048-002"){ noprod = 600;}
-            if(model=="CA-942-10048-001"){ noprod = 600; rev_no="00";rev="H";desc="SWITCH MODULE LIN SLAVE";}
+            // if(model=="CA-942-10048-001"){ noprod = 600; rev_no="00";rev="H";desc="SWITCH MODULE LIN SLAVE";}
+            if(model=="CA-942-10048-002"){ noprod = 600; rev_no="00";rev="H";desc="SWITCH MODULE LIN SLAVE";}
             if(model=="CA-942-10049"){ noprod = 600;rev_no="04"; rev="E";desc="SLAVE CARRIER BOARD (Rev E)";}
             if(model=="CA-942-10067-001"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - Red Indicators (Rev.G)";}
             if(model=="CA-942-10067-003"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - White Indicators (Rev.G)";}
