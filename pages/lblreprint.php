@@ -39,7 +39,7 @@ else{
     }
     elseif(strpos($model, '10046')!== false){
         $desc = "^A0N,20,20^FO350,380^FDLIN MASTER MODULE ^FS 
-        ^A0N,20,20^FO350,405^FDBom Rev.M ^FS 
+        ^A0N,20,20^FO350,405^FDBom Rev.N ^FS 
         ^A0N,20,20^FO350,430^FD(Note : set as Phantom)^FS ";
     }
     elseif(strpos($model, '10049')!== false){

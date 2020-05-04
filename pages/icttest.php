@@ -5,10 +5,12 @@ include('../dist/includes/dbcon.php');
 $query=mysqli_query($con,"select lastupdate from ict_test order by lastupdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
 $lupdICT=$row['lastupdate'];
+// $lupdICT = 1588067839;
 
 $query=mysqli_query($con,"select lastupdate from sn_panel order by lastupdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
 $lupdPanel=$row['lastupdate'];
+// $lupdPanel = 1587376639;
 
 
 // ***********************************  Fetching ICT Log  **************************************************************
@@ -17,6 +19,7 @@ $files1 = scandir($dir);
 
 foreach($files1 as $file){
     if(date (filemtime("C:/carling/ict/".$file))>$lupdICT){
+    // if((filemtime("C:/carling/ict/".$file))){    
         if(strlen($file)>5){
             if(strpos($file, 'default') !== false){
                 //Do nothing
@@ -78,6 +81,7 @@ $files1 = scandir($dir);
 foreach($files1 as $files){
     if(strlen($files)>5){
         if(date(filemtime("C:/carling/panel_sn/".$files))>$lupdPanel){
+        // if((filemtime("C:/carling/panel_sn/".$files)){
             set_time_limit(0);
             $file = fopen("C:/carling/panel_sn/$files","r");
             if(fgetcsv($file) !== FALSE){
