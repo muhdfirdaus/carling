@@ -57,6 +57,10 @@ else{
         $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
         ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.G)^FS  ";
     }
+    elseif(strpos($model, '10053-001')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDFinish Goods with ^FS 
+        ^A0N,20,20^FO350,405^FDConformal Coating^FS  ";
+    }
 
     $lbl = "^XA 
 
