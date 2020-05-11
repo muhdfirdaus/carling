@@ -199,7 +199,7 @@ endif;
             if(model=="CA-942-10047-003"){ noprod = 300; rev_no="01";rev="J";desc="LIN Switch No Function LED Rev.J (SWITCH MODULE - LIN SLAVE)";}
             if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="H"; desc="942-10047-101_H (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10046-003"){ noprod = 400; rev_no="01";rev="M";desc="LIN MASTER MODULE Bom Rev.M (Note : set as Phantom)";}
-            if(model=="CA-946-10053-001"){ noprod = 600;rev_no="02";rev="";desc="Finish Goods with Conformal Coating";}
+            if(model=="CA-946-10053-001"){ noprod = 600;rev_no="02";rev="";desc="Finish Goods with Conformal Coating (Project 4033-001,Hazard Switch)";}
             // if(model=="CA-942-10048-001"){ noprod = 600; rev_no="00";rev="H";desc="SWITCH MODULE LIN SLAVE";}
             if(model=="CA-942-10048-002"){ noprod = 600; rev_no="00";rev="H";desc="SWITCH MODULE LIN SLAVE";}
             if(model=="CA-942-10049"){ noprod = 600;rev_no="04"; rev="E";desc="SLAVE CARRIER BOARD (Rev E)";}

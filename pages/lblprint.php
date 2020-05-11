@@ -54,7 +54,8 @@ elseif(strpos($model, '10067-003')!== false){
 }
 elseif(strpos($model, '10053-001')!== false){
     $desc = "^A0N,20,20^FO350,380^FDFinish Goods with ^FS 
-    ^A0N,20,20^FO350,405^FDConformal Coating^FS  ";
+    ^A0N,20,20^FO350,405^FDCoating (Project 4033-001,^FS 
+    ^A0N,20,20^FO350,430^FDHazard Switch)^FS ";
 }
 
 $lbl = "^XA 
