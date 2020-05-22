@@ -35,13 +35,33 @@ date_default_timezone_set("Asia/Singapore");
                     <li class="">
                     
                     <a href="ictmanual.php" class="dropdown-toggle">
-                      <i class="glyphicon glyphicon-barcode text-blue"></i> Manual ICT Test 
+                      <i class="glyphicon glyphicon-warning-sign text-orange"></i> Manual ICT Test 
                       
                     </a>
                   </li>
                   
                   <?php } ?>
-
+                  <li class="">
+                    
+                    <a href="searchrecord.php" >
+                      <i class="glyphicon glyphicon-search text-green"></i> SN Record
+                      
+                    </a>
+                  </li>
+                  <li class="">
+                    
+                    <a href="box_report.php" >
+                      <i class="glyphicon glyphicon-file text-green"></i> Box Report
+                      
+                    </a>
+                  </li>
+                  <li class="">
+                    
+                    <a href="#boxprint" class="dropdown-toggle" data-target="#boxprint" data-toggle="modal">
+                      <i class="glyphicon glyphicon-barcode text-blue"></i> Reprint Label
+                      
+                    </a>
+                  </li>
                   <li class="dropdown notifications-menu">
                     
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -137,19 +157,19 @@ date_default_timezone_set("Asia/Singapore");
         <h4 class="modal-title">Print Label (Box)</h4>
       </div>
       <div style="font-size:11px" class="modal-body">
-        <form class="form-horizontal" id="form_report" method="post" action="print_box.php" enctype='multipart/form-data'>
+        <form class="form-horizontal" id="form_report" method="post" action="lblreprint.php" enctype='multipart/form-data'>
           <div class="form-group">
             <label class="control-label col-lg-2" for="box">Box ID</label>
             <div class="col-lg-7">
-              <input type="text" class="form-control" id="box_id" name="box_id" placeholder="Box ID">  
+              <input autocomplete="off" type="text" class="form-control" id="box_id" name="box_id" placeholder="Box ID">  
             </div>
           </div><hr>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label class="control-label col-lg-2" for="printer_ip">Printer IP</label>
             <div class="col-lg-7">
               <input type="text" class="form-control" id="printer_ip" name="printer_ip" placeholder="Printer IP" value="<?php echo $ip1; ?>">  
             </div>
-          </div>
+          </div> -->
           <!-- <div class="form-group control-label text-red">*Please insert ONE(1) field only</div> -->
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary" id="btn_submit">Send</button>
