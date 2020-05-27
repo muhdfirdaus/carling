@@ -112,6 +112,7 @@ endif;
                                         <!-- <option value="CA-942-10048-002">CA-942-10048-002</option> -->
                                         <option value="CA-942-10067-001">CA-942-10067-001</option>
                                         <option value="CA-942-10067-003">CA-942-10067-003</option>
+                                        <option value="CA-942-10067-012">CA-942-10067-012</option>
                                     </select>
                                 </td>
                             </tr>
@@ -205,6 +206,7 @@ endif;
             if(model=="CA-942-10049"){ noprod = 600;rev_no="04"; rev="E";desc="SLAVE CARRIER BOARD (Rev E)";}
             if(model=="CA-942-10067-001"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - Red Indicators (Rev.G)";}
             if(model=="CA-942-10067-003"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - White Indicators (Rev.G)";}
+            if(model=="CA-942-10067-012"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo (Rev.G)";}
             
             document.getElementById("qty").value = noprod;
             document.getElementById("rev").value = rev;
