@@ -106,7 +106,7 @@ endif;
                             $query2=mysqli_query($con,"SELECT bs.sn, bm.box_id, bm.model, bm.qty,bm.status, u.name, bm.timestamp
                             FROM box_sn bs
                             LEFT JOIN box_master bm ON bs.box_id = bm.box_id
-                            LEFT JOIN USER u ON bm.user_id = u.user_id
+                            LEFT JOIN USER u ON bs.user_id = u.user_id
                             WHERE bs.sn ='$sn'")or die(mysqli_error($con));
                             if(count($row = mysqli_fetch_array($query2))>=1){
                         ?>
@@ -117,7 +117,7 @@ endif;
                                 <td><?php echo $row['qty'];?></td>
                                 <td><?php echo $row['name'];?></td>
                                 <td><?php echo date('d-M-Y h:i:sa',$row['timestamp']);?></td>
-                                <?php if($row['status']=="1"){echo "<td class='text-green'><b>FINISH</b>";}else echo "<td class='text-red'><b>ON GOING</b>";?></td>
+                                <?php if($row['status']=="1"){echo "<td><span class='label label-success'>FINISHED</span>";}else echo "<td><span class='label label-danger'>ON GOING</span>";?></td>
                             </tr> 
                         <?php 
                             }

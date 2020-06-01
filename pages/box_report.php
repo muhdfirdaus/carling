@@ -97,7 +97,7 @@ endif;
                           $query2=mysqli_query($con,"SELECT bs.sn, bm.box_id, bm.model, bm.qty,bm.status, u.name, bm.timestamp
                           FROM box_sn bs
                           LEFT JOIN box_master bm ON bs.box_id = bm.box_id
-                          LEFT JOIN USER u ON bm.user_id = u.user_id
+                          LEFT JOIN USER u ON bs.user_id = u.user_id
                           WHERE bs.box_id =(SELECT box_id FROM box_sn WHERE sn='$sn')")or die(mysqli_error($con));
                         }
                         else{
