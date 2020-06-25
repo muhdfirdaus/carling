@@ -100,6 +100,7 @@ endif;
                                 <td>
                                     <select id="model" name="model" class="form-control">
                                         <option value="null">--SELECT--</option>
+                                        <option value="CA-942-10027-001">CA-942-10027-001</option>
                                         <option value="CA-942-10046-003">CA-942-10046-003</option>
                                         <option value="CA-942-10047-001">CA-942-10047-001</option>
                                         <option value="CA-942-10047-002">CA-942-10047-002</option>
@@ -194,6 +195,7 @@ endif;
             model = $("#model").val();
             
             if(model=="null"){ noprod = ""; rev=""; rev_no="";desc="";}
+            if(model=="CA-942-10027-001"){ noprod = 10; rev_no="00";rev="H"; desc="942-10027-001 rev. H Bom";}
             if(model=="CA-942-10047-001"){ noprod = 300; rev_no="02";rev="J"; desc="LIN SWITCH RED FUNCTION LED REV.J ( SWITCH MODULE -LIN SLAVE )";}
             if(model=="CA-942-10047-002"){ noprod = 300; rev_no="02";rev="J"; desc="LIN SWITCH GREEN FUNCTION LED REV.J ( SWITCH MODULE -LIN SLAVE )";}
             // if(model=="CA-942-10047-002"){ noprod = 300;}

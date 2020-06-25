@@ -18,6 +18,9 @@ if(strpos($model, '10047-001')!== false){
     ^A0N,20,20^FO350,405^FDLED REV.J (SWITCH ^FS 
     ^A0N,20,20^FO350,430^FDMODULE -LIN SLAVE)^FS ";
 }
+elseif(strpos($model, '10027-001')!== false){
+    $desc = "^A0N,20,20^FO350,380^942-10027-001 rev.H Bom^FS ";
+}
 elseif(strpos($model, '10047-002')!== false){
     $desc = "^A0N,20,20^FO350,380^FDLIN SWITCH GREEN FUNCTION^FS 
     ^A0N,20,20^FO350,405^FDLED REV.J (SWITCH ^FS 
