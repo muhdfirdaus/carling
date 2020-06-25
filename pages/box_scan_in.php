@@ -59,11 +59,26 @@ include('product_cfg.php');
                 if(strpos($no,"10047")!== false || strpos($no,"10046")!== false || strpos($no,"10045")!== false){
                     if(strlen($_POST['sn'.$i])>=1){
                         $sn = $_POST['sn'.$i];
-                        $query=mysqli_query($con,"SELECT i.result FROM ict_test i JOIN sn_panel p ON i.panel = p.panel_no WHERE p.sn='$sn' ORDER BY i.id DESC LIMIT 1")or die(mysqli_error($con));
+                        if(strpos($no,"10046")!== false ){
+                            $query=mysqli_query($con,"SELECT result FROM ict_test WHERE panel='$sn'LIMIT 1")or die(mysqli_error($con));
+                        }
+                        else{
+                            $query=mysqli_query($con,"SELECT i.result FROM ict_test i JOIN sn_panel p ON i.panel = p.panel_no WHERE p.sn='$sn' ORDER BY i.id DESC LIMIT 1")or die(mysqli_error($con));
+                        }
                         $row=mysqli_fetch_array($query);
                         if($row['result']!="P"){
-                            $testfailed = 1;
-                            $testmsg.=$sn.' on line '.$i.' not pass ICT Test yet!\n';
+                            if(strpos($no,"10046")!== false ){
+                                $query=mysqli_query($con,"SELECT i.result FROM ict_test i JOIN sn_panel p ON i.panel = p.panel_no WHERE p.sn='$sn' ORDER BY i.id DESC LIMIT 1")or die(mysqli_error($con));
+                                $row=mysqli_fetch_array($query);
+                                if($row['result']!="P"){
+                                    $testfailed = 1;
+                                    $testmsg.=$sn.' on line '.$i.' not pass ICT Test yet!\n';
+                                }
+                            }
+                            else{
+                                $testfailed = 1;
+                                $testmsg.=$sn.' on line '.$i.' not pass ICT Test yet!\n';
+                            }
                         }
                     }
                 }
