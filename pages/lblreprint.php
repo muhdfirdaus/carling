@@ -23,6 +23,9 @@ else{
         ^A0N,20,20^FO350,405^FDLED REV.J (SWITCH ^FS 
         ^A0N,20,20^FO350,430^FDMODULE -LIN SLAVE)^FS ";
     }
+    elseif(strpos($model, '10027-001')!== false){
+        $desc = "^A0N,20,20^FO350,380^942-10027-001 rev.H Bom^FS ";
+    }
     elseif(strpos($model, '10047-002')!== false){
         $desc = "^A0N,20,20^FO350,380^FDLIN SWITCH GREEN FUNCTION^FS 
         ^A0N,20,20^FO350,405^FDLED REV.J (SWITCH ^FS 
@@ -36,6 +39,10 @@ else{
     elseif(strpos($model, '10047-101')!== false){
         $desc = "^A0N,20,20^FO350,380^FD942-10047-101_H (Switch ^FS 
         ^A0N,20,20^FO350,405^FDBoard-DAF-KAMAZ)^FS ";
+    }
+    elseif(strpos($model, '10047-136')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD942-10047-136_J Bom ^FS 
+        ^A0N,20,20^FO350,405^FDGreen \ Amber LED^FS  ";
     }
     elseif(strpos($model, '10046')!== false){
         $desc = "^A0N,20,20^FO350,380^FDLIN MASTER MODULE ^FS 
@@ -58,9 +65,25 @@ else{
         ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.G)^FS  ";
     }
     elseif(strpos($model, '10053-001')!== false){
-        $desc = "^A0N,20,20^FO350,380^FDFinish Goods with Conformal^FS 
+        $desc = "^A0N,20,20^FO350,380^FDFinish Goods with ^FS 
         ^A0N,20,20^FO350,405^FDCoating (Project 4033-001,^FS 
         ^A0N,20,20^FO350,430^FDHazard Switch)^FS ";
+    }
+    elseif(strpos($model, '10067-012')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
+        ^A0N,20,20^FO350,405^FDHalo (Rev.G)^FS  ";
+    }
+    elseif(strpos($model, '10128-002')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDElectronics Package^FS 
+        ^A0N,20,20^FO350,405^FD(942-10128-002)^FS  ";
+    }
+    elseif(strpos($model, '10128-003')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDElectronics Package^FS 
+        ^A0N,20,20^FO350,405^FD(942-10128-003)^FS  ";
+    }
+    elseif(strpos($model, '10047-102')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD942-10047-102_J Bom^FS 
+        ^A0N,20,20^FO350,405^FD(Amber LED)^FS  ";
     }
 
     $lbl = "^XA 
