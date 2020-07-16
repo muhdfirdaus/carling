@@ -35,6 +35,11 @@ elseif(strpos($model, '10047-101')!== false){
     $desc = "^A0N,20,20^FO350,380^FD942-10047-101_H (Switch ^FS 
     ^A0N,20,20^FO350,405^FDBoard-DAF-KAMAZ)^FS ";
 }
+elseif(strpos($model, '10047-131')!== false){
+    $desc = "^A0N,20,20^FO350,380^FD942-10047-131 Red LED ^FS 
+    ^A0N,20,20^FO350,405^FDRev.J (Switch ^FS  
+    ^A0N,20,20^FO350,430^FDBoard-DAF-KAMAZ)^FS ";
+}
 elseif(strpos($model, '10047-136')!== false){
     $desc = "^A0N,20,20^FO350,380^FD942-10047-136_J Bom ^FS 
     ^A0N,20,20^FO350,405^FDGreen \ Amber LED^FS  ";
