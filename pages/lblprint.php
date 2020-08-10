@@ -69,6 +69,16 @@ elseif(strpos($model, '10053-001')!== false){
     ^A0N,20,20^FO350,405^FDCoating (Project 4033-001,^FS 
     ^A0N,20,20^FO350,430^FDHazard Switch)^FS ";
 }
+elseif(strpos($model, '10067-005')!== false){
+    $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue^FS 
+    ^A0N,20,20^FO350,405^FDHalo - Orange Indicators^FS 
+    ^A0N,20,20^FO350,430^FD(Rev.G)^FS ";
+}
+elseif(strpos($model, '10067-011')!== false){
+    $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Green^FS 
+    ^A0N,20,20^FO350,405^FDHalo - Orange Indicators^FS 
+    ^A0N,20,20^FO350,430^FD(Rev.G)^FS ";
+}
 elseif(strpos($model, '10067-012')!== false){
     $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
     ^A0N,20,20^FO350,405^FDHalo (Rev.G)^FS  ";
