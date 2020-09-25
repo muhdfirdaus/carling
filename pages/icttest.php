@@ -5,12 +5,12 @@ include('../dist/includes/dbcon.php');
 $query=mysqli_query($con,"select lastupdate from ict_test order by lastupdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
 $lupdICT=$row['lastupdate'];
-// $lupdICT = 1588067839;
+// $lupdICT = 1600620271;
 
 $query=mysqli_query($con,"select lastupdate from sn_panel order by lastupdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
 $lupdPanel=$row['lastupdate'];
-// $lupdPanel = 1587376639;
+// $lupdPanel = 1600361433;
 
 
 // ***********************************  Fetching ICT Log  **************************************************************

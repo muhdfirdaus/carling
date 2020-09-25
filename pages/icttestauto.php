@@ -1,5 +1,5 @@
 <head>
-  <meta http-equiv="refresh" content="21600">
+  <meta http-equiv="refresh" content="3600">
 </head>
 <h1>Don't close this page!</h1>
 <pre>

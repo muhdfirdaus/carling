@@ -67,7 +67,7 @@ if($_SESSION['admin']!=1){
           <!-- Main content -->
          <?php 
          isset($_GET['limit'])? $limit = $_GET['limit'] : $limit = 1;
-         $limit>6 ? $limit=6 : $limit = $limit; 
+         $limit>6 ? $limit=$limit : $limit = $limit; 
          ?>
           <section class="content">
             <div class="panel panel-default">
@@ -83,6 +83,8 @@ if($_SESSION['admin']!=1){
                         <option value="4" <?php if($limit==4){echo"selected";} ?>>4</option>
                         <option value="5" <?php if($limit==5){echo"selected";} ?>>5</option>
                         <option value="6" <?php if($limit==6){echo"selected";} ?>>6</option>
+                        <option value="10" <?php if($limit==10){echo"selected";} ?>>10</option>
+                        <option value="50" <?php if($limit==50){echo"selected";} ?>>50</option>
                     </select>
                   </p>
                   <br>

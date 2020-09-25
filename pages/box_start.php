@@ -119,8 +119,11 @@ endif;
                                         <option value="CA-942-10067-005">CA-942-10067-005</option>
                                         <option value="CA-942-10067-011">CA-942-10067-011</option>
                                         <option value="CA-942-10067-012">CA-942-10067-012</option>
+                                        <option value="CA-942-10085-003">CA-942-10085-003</option>
                                         <option value="CA-942-10128-002">CA-942-10128-002</option>
                                         <option value="CA-942-10128-003">CA-942-10128-003</option>
+                                        <option value="CA-942-10161-001">CA-942-10161-001</option>
+                                        <option value="CA-942-10161-003">CA-942-10161-003</option>
                                     </select>
                                 </td>
                             </tr>
@@ -221,8 +224,11 @@ endif;
             if(model=="CA-942-10067-005"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - Orange Indicators (Rev.G)";}
             if(model=="CA-942-10067-011"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Green Halo - Orange Indicators (Rev.G)";}
             if(model=="CA-942-10067-012"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo (Rev.G)";}
+            if(model=="CA-942-10085-003"){ noprod = 600;rev_no="00"; rev="J";desc="HALO Switch Blue Halo - White Indicators (Rev.J)";}
             if(model=="CA-942-10128-002"){ noprod = 600;rev_no="00"; rev="";desc="Electronics Package (942-10128-002)";}
             if(model=="CA-942-10128-003"){ noprod = 600;rev_no="00"; rev="";desc="Electronics Package (942-10128-003)";}
+            if(model=="CA-942-10161-001"){ noprod = 100;rev_no="02"; rev="A";desc="4045-001 Polaris LED BOARD";}
+            if(model=="CA-942-10161-003"){ noprod = 100;rev_no="02"; rev="A";desc="4045-001 Polaris LED BOARD";}
             
             document.getElementById("qty").value = noprod;
             document.getElementById("rev").value = rev;

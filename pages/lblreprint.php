@@ -100,6 +100,18 @@ else{
         $desc = "^A0N,20,20^FO350,380^FD942-10047-102_J Bom^FS 
         ^A0N,20,20^FO350,405^FD(Amber LED)^FS  ";
     }
+    elseif(strpos($model, '10161-001')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD4045-001 Polaris^FS 
+        ^A0N,20,20^FO350,405^FDLED Board^FS  ";
+    }
+    elseif(strpos($model, '10161-003')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD4045-001 Polaris^FS 
+        ^A0N,20,20^FO350,405^FDLED Board^FS  ";
+    }
+    elseif(strpos($model, '10085-003')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
+        ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.J)^FS  ";
+    }
 
     $lbl = "^XA 
 
@@ -175,6 +187,6 @@ else{
 
     //print label
     copy($filename, "//PPS71001/z4mcarl");     
-    echo "<script>document.location='box_start.php'</script>";   
+    // echo "<script>document.location='box_start.php'</script>";   
 }  
 ?>

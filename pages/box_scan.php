@@ -66,7 +66,8 @@ endif;
         $rawdata=$row['lastupdate'];
         $lupd=date('d M Y h:iA',$rawdata);
       ?>
-      <div class="alert alert-success" role="alert">Log data last updated on: <?php echo $lupd;?> &nbsp;<a href="icttest.php">CLICK TO UPDATE AGAIN</a></div>
+      <div class="alert alert-success" role="alert">Log data last updated on: <?php echo $lupd;?>. Log will automatically update every one(1) hour.</div>
+      <!-- <div class="alert alert-success" role="alert">Log data last updated on: <?php echo $lupd;?> &nbsp;<a href="icttest.php">CLICK TO UPDATE AGAIN</a></div> -->
         <div class="container">
           <!-- Content Header (Page header) -->
           <?php 
