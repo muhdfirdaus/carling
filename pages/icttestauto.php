@@ -10,46 +10,128 @@ This page is set to update logfile for Carling packing system automatically.
 
 include('../dist/includes/dbcon.php');
 
-$lupdPanel = strtotime(date("Y-m-d"));
-$lupdICT = $lupdPanel;
+
+$query=mysqli_query($con,"select lastupdate from ict_test order by lastupdate desc limit 1")or die(mysqli_error($con));
+$row=mysqli_fetch_array($query);
+$lupdICT=$row['lastupdate'];
+// $lupdICT = 1600620271;
+
+$query=mysqli_query($con,"select lastupdate from sn_panel order by lastupdate desc limit 1")or die(mysqli_error($con));
+$row=mysqli_fetch_array($query);
+$lupdPanel=$row['lastupdate'];
+// $lupdPanel = 1600361433;
 
 
 // ***********************************  Fetching ICT Log  **************************************************************
-$dir    = 'C:\carling\ict';
-$files1 = scandir($dir);
 
-foreach($files1 as $file){
-    if(date (filemtime("C:/carling/ict/".$file))>$lupdICT){
-    // if((filemtime("C:/carling/ict/".$file))){    
-        if(strlen($file)>5){
-            if(strpos($file, 'default') !== false){
-                //Do nothing
-            }
-            else{
-                $full = explode("-",$file);
-                $panel = preg_replace('/\s+/', '', $full[0]);
-                $res = $full[2][0];
 
-                $fdate = date (filemtime("C:/carling/ict/".$file));
-                
-                set_time_limit(0);
-                
-                if(isset($data[$panel])){
-                    if($data[$panel]['d']<$fdate){
+$mydir = "\\\\10.38.30.173\\Test_log";// Check if ICT sharefolder is accessible
+if(file_exists($mydir)){
+    $dir    = '\\\\10.38.30.173\\Test_log\\ICT\\942-10048';
+    $files1 = scandir($dir);
+
+    foreach($files1 as $file){
+        if(date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10048\\".$file))>$lupdICT){
+        // if((filemtime("C:/carling/ict/".$file))){    
+            if(strlen($file)>5){
+                if(strpos($file, 'default') !== false){
+                    //Do nothing
+                }
+                else{
+                    $full = explode("-",$file);
+                    $panel = preg_replace('/\s+/', '', $full[0]);
+                    $res = $full[2][0];
+
+                    $fdate = date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10048\\".$file));
+                    
+                    set_time_limit(0);
+                    
+                    if(isset($data[$panel])){
+                        if($data[$panel]['d']<$fdate){
+                            $data[$panel]['r'] = $res;
+                            $data[$panel]['d'] = $fdate;
+                        }
+                    }
+                    else{
+                        $data[$panel]['p'] = $panel;
                         $data[$panel]['r'] = $res;
                         $data[$panel]['d'] = $fdate;
                     }
                 }
+            }
+        }
+    }
+
+    $dir    = '\\\\10.38.30.173\\Test_log\\ICT\\942-10047';
+    $files1 = scandir($dir);
+
+    foreach($files1 as $file){
+        if(date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10047\\".$file))>$lupdICT){
+        // if((filemtime("C:/carling/ict/".$file))){    
+            if(strlen($file)>5){
+                if(strpos($file, 'default') !== false){
+                    //Do nothing
+                }
                 else{
-                    $data[$panel]['p'] = $panel;
-                    $data[$panel]['r'] = $res;
-                    $data[$panel]['d'] = $fdate;
+                    $full = explode("-",$file);
+                    $panel = preg_replace('/\s+/', '', $full[0]);
+                    $res = $full[2][0];
+
+                    $fdate = date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10047\\".$file));
+                    
+                    set_time_limit(0);
+                    
+                    if(isset($data[$panel])){
+                        if($data[$panel]['d']<$fdate){
+                            $data[$panel]['r'] = $res;
+                            $data[$panel]['d'] = $fdate;
+                        }
+                    }
+                    else{
+                        $data[$panel]['p'] = $panel;
+                        $data[$panel]['r'] = $res;
+                        $data[$panel]['d'] = $fdate;
+                    }
+                }
+            }
+        }
+    }
+
+    $dir    = '\\\\10.38.30.173\\Test_log\\ICT\\942-10046';
+    $files1 = scandir($dir);
+
+    foreach($files1 as $file){
+        if(date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10046\\".$file))>$lupdICT){
+        // if((filemtime("C:/carling/ict/".$file))){    
+            if(strlen($file)>5){
+                if(strpos($file, 'default') !== false){
+                    //Do nothing
+                }
+                else{
+                    $full = explode("-",$file);
+                    $panel = preg_replace('/\s+/', '', $full[0]);
+                    $res = $full[2][0];
+
+                    $fdate = date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10046\\".$file));
+                    
+                    set_time_limit(0);
+                    
+                    if(isset($data[$panel])){
+                        if($data[$panel]['d']<$fdate){
+                            $data[$panel]['r'] = $res;
+                            $data[$panel]['d'] = $fdate;
+                        }
+                    }
+                    else{
+                        $data[$panel]['p'] = $panel;
+                        $data[$panel]['r'] = $res;
+                        $data[$panel]['d'] = $fdate;
+                    }
                 }
             }
         }
     }
 }
-
 if(isset($data)){
     
     foreach($data as $newdata){
