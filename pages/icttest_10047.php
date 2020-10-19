@@ -4,8 +4,8 @@ include('../dist/includes/dbcon.php');
 
 $query=mysqli_query($con,"select lastupdate from ict_test order by lastupdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
-// $lupdICT=$row['lastupdate'];
-$lupdICT = 1600365482;
+// $lupdICT=$row['1602925677'];
+$lupdICT = 1602782877;
 
 
 
@@ -19,7 +19,7 @@ if(file_exists($mydir)){
     $files1 = scandir($dir);
 
     foreach($files1 as $file){
-        if(date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10047\\".$file))>$lupdICT){
+        if((date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10047\\".$file))>$lupdICT)&&(date (filemtime("\\\\10.38.30.173\\Test_log\\ICT\\942-10047\\".$file))<1602925677)){
         // if((filemtime("C:/carling/ict/".$file))){    
             if(strlen($file)>5){
                 if(strpos($file, 'default') !== false){
