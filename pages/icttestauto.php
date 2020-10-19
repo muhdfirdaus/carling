@@ -9,9 +9,9 @@ This page is set to update logfile for Carling(1/2) packing system automatically
 include('../dist/includes/dbcon.php');
 
 
-$query=mysqli_query($con,"select lastupdate from ict_test order by lastupdate desc limit 1")or die(mysqli_error($con));
+$query=mysqli_query($con,"select fdate from ict_test order by fdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
-$lupdICT=$row['lastupdate'];
+$lupdICT=$row['fdate'];
 // $lupdICT = 1600620271;
 
 $query=mysqli_query($con,"select lastupdate from sn_panel order by lastupdate desc limit 1")or die(mysqli_error($con));
