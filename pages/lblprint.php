@@ -54,6 +54,10 @@ elseif(strpos($model, '10049')!== false){
     ^A0N,20,20^FO350,405^FDBOARD (Rev E)^FS ";
 }
 elseif(strpos($model, '10048-001')!== false){
+    $desc = "^A0N,20,20^FO350,380^FDRheostat BOM Rev.H^FS
+    ^A0N,20,20^FO350,405^FD(SWITCH MODULE-LIN SLAVE)^FS ";
+}
+elseif(strpos($model, '10048-002')!== false){
     $desc = "^A0N,20,20^FO350,380^FDSWITCH MODULE LIN SLAVE^FS ";
 }
 elseif(strpos($model, '10067-001')!== false){
