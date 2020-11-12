@@ -116,6 +116,10 @@ else{
         $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
         ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.J)^FS  ";
     }
+    elseif(strpos($model, '10169-001')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDPCBA, Polaris^FS 
+        ^A0N,20,20^FO350,405^FDDriver Modes Switch^FS  ";
+    }
 
     $lbl = "^XA 
 
