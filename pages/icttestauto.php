@@ -14,9 +14,9 @@ $row=mysqli_fetch_array($query);
 $lupdICT=$row['fdate'];
 // $lupdICT = 1600620271;
 
-$query=mysqli_query($con,"select lastupdate from sn_panel order by lastupdate desc limit 1")or die(mysqli_error($con));
+$query=mysqli_query($con,"select fdate from sn_panel order by fdate desc limit 1")or die(mysqli_error($con));
 $row=mysqli_fetch_array($query);
-$lupdPanel=$row['lastupdate'];
+$lupdPanel=$row['fdate'];
 // $lupdPanel = 1600361433;
 
 
@@ -99,8 +99,9 @@ foreach($files1 as $files){
                 while (($line = fgetcsv($file)) !== FALSE) {
                     $panel = preg_replace('/\s+/', '', $line[0]);
                     $sn = preg_replace('/\s+/', '', $line[1]); 
+                    $fdate = date(filemtime("C:/carling/panel_sn/".$files));
                     $updateon = time();
-                    mysqli_query($con, "INSERT INTO sn_panel (panel_no,sn, lastupdate) values('$panel','$sn', '$updateon')")or die(mysqli_error($con));
+                    mysqli_query($con, "INSERT INTO sn_panel (panel_no,sn, fdate,lastupdate) values('$panel','$sn', '$fdate', '$updateon')")or die(mysqli_error($con));
                 }
             }
             
