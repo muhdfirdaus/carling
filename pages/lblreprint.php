@@ -49,6 +49,11 @@ else{
         $desc = "^A0N,20,20^FO350,380^FD942-10047-136_J Bom ^FS 
         ^A0N,20,20^FO350,405^FDGreen \ Amber LED^FS  ";
     }
+    elseif(strpos($model, '10046-005')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDLIN MASTER MODULE ^FS 
+        ^A0N,20,20^FO350,405^FDBom Rev.P ^FS 
+        ^A0N,20,20^FO350,430^FD(Note : set as Phantom)^FS ";
+    }
     elseif(strpos($model, '10046')!== false){
         $desc = "^A0N,20,20^FO350,380^FDLIN MASTER MODULE ^FS 
         ^A0N,20,20^FO350,405^FDBom Rev.N ^FS 
