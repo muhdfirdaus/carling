@@ -123,6 +123,7 @@ endif;
                                         <option value="CA-942-10085-003">CA-942-10085-003</option>
                                         <option value="CA-942-10128-002">CA-942-10128-002</option>
                                         <option value="CA-942-10128-003">CA-942-10128-003</option>
+                                        <option value="CA-942-10129-001">CA-942-10129-001</option>
                                         <option value="CA-942-10161-001">CA-942-10161-001</option>
                                         <option value="CA-942-10161-003">CA-942-10161-003</option>
                                         <option value="CA-942-10169-001">CA-942-10169-001</option>
@@ -230,6 +231,7 @@ endif;
             if(model=="CA-942-10085-003"){ noprod = 600;rev_no="00"; rev="J";desc="HALO Switch Blue Halo - White Indicators (Rev.J)";}
             if(model=="CA-942-10128-002"){ noprod = 600;rev_no="00"; rev="";desc="Electronics Package (942-10128-002)";}
             if(model=="CA-942-10128-003"){ noprod = 600;rev_no="00"; rev="";desc="Electronics Package (942-10128-003)";}
+            if(model=="CA-942-10129-001"){ noprod = 600;rev_no="00"; rev="A";desc="942-10129-001 Polaris (Carling)";}
             if(model=="CA-942-10161-001"){ noprod = 100;rev_no="02"; rev="A";desc="4045-001 Polaris LED BOARD";}
             if(model=="CA-942-10161-003"){ noprod = 100;rev_no="02"; rev="A";desc="4045-001 Polaris LED BOARD";}
             if(model=="CA-942-10169-001"){ noprod = 100;rev_no="00"; rev="";desc="PCBA, Polaris Driver Modes Switch";}

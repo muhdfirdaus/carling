@@ -105,6 +105,10 @@ else{
         $desc = "^A0N,20,20^FO350,380^FDElectronics Package^FS 
         ^A0N,20,20^FO350,405^FD(942-10128-003)^FS  ";
     }
+    elseif(strpos($model, '10129-001')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD942-10129-001 Polaris^FS 
+        ^A0N,20,20^FO350,405^FD(Carling)^FS  ";
+    }
     elseif(strpos($model, '10047-102')!== false){
         $desc = "^A0N,20,20^FO350,380^FD942-10047-102_J Bom^FS 
         ^A0N,20,20^FO350,405^FD(Amber LED)^FS  ";
