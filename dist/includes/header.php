@@ -55,6 +55,7 @@ date_default_timezone_set("Asia/Singapore");
                       
                     </a>
                   </li>
+                  <?php if($_SESSION['admin']==1){ ?>
                   <li class="">
                     
                     <a href="#boxprint" class="dropdown-toggle" data-target="#boxprint" data-toggle="modal">
@@ -62,6 +63,7 @@ date_default_timezone_set("Asia/Singapore");
                       
                     </a>
                   </li>
+                  <?php } ?>
                   <li class="dropdown notifications-menu">
                     
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
