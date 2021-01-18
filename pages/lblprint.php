@@ -120,6 +120,10 @@ elseif(strpos($model, '10085-003')!== false){
     $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
     ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.J)^FS  ";
 }
+elseif(strpos($model, '10085-009')!== false){
+    $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Green ^FS 
+    ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.J)^FS  ";
+}
 elseif(strpos($model, '10168-001')!== false){
     $desc = "^A0N,20,20^FO350,380^FD94x-10168^FS 
     ^A0N,20,20^FO350,405^FDVent-Seat-Cabin^FS  ";

@@ -121,6 +121,7 @@ endif;
                                         <option value="CA-942-10067-011">CA-942-10067-011</option>
                                         <option value="CA-942-10067-012">CA-942-10067-012</option>
                                         <option value="CA-942-10085-003">CA-942-10085-003</option>
+                                        <option value="CA-942-10085-009">CA-942-10085-009</option>
                                         <option value="CA-942-10128-002">CA-942-10128-002</option>
                                         <option value="CA-942-10128-003">CA-942-10128-003</option>
                                         <option value="CA-942-10129-001">CA-942-10129-001</option>
@@ -230,6 +231,7 @@ endif;
             if(model=="CA-942-10067-011"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Green Halo - Orange Indicators (Rev.G)";}
             if(model=="CA-942-10067-012"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo (Rev.G)";}
             if(model=="CA-942-10085-003"){ noprod = 600;rev_no="00"; rev="J";desc="HALO Switch Blue Halo - White Indicators (Rev.J)";}
+            if(model=="CA-942-10085-009"){ noprod = 600;rev_no="00"; rev="J";desc="HALO SWITCH Green Halo - White Indicators(Rev.J)";}
             if(model=="CA-942-10128-002"){ noprod = 600;rev_no="00"; rev="";desc="Electronics Package (942-10128-002)";}
             if(model=="CA-942-10128-003"){ noprod = 600;rev_no="00"; rev="";desc="Electronics Package (942-10128-003)";}
             if(model=="CA-942-10129-001"){ noprod = 600;rev_no="00"; rev="A";desc="942-10129-001 Polaris (Carling)";}
