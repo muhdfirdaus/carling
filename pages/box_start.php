@@ -142,7 +142,7 @@ endif;
                             </tr>
                             <tr>
                                 <td>Revision : </td>
-                                <td><input type="text" name="rev" id="rev" class="form-control" autocomplete="off"></td>
+                                <td><input type="text" name="rev" id="rev" class="form-control" autocomplete="off" readonly></td>
                             </tr>
                             <tr>
                                 <td>Revision Number : </td>
@@ -218,7 +218,7 @@ endif;
             if(model=="CA-942-10047-102"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-102_J Bom (Amber LED)";}
             // if(model=="CA-942-10047-002"){ noprod = 300;}
             if(model=="CA-942-10047-003"){ noprod = 300; rev_no="01";rev="J";desc="LIN Switch No Function LED Rev.J (SWITCH MODULE - LIN SLAVE)";}
-            if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="H"; desc="942-10047-101_H (Switch Board-DAF-KAMAZ)";}
+            if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-101_J (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10046-003"){ noprod = 400; rev_no="01";rev="M";desc="LIN MASTER MODULE Bom Rev.M (Note : set as Phantom)";}
             if(model=="CA-942-10046-005"){ noprod = 400; rev_no="00";rev="P";desc="LIN MASTER MODULE Bom Rev.P (Note : set as Phantom)";}
             if(model=="CA-946-10053-001"){ noprod = 600;rev_no="02";rev="";desc="Finish Goods with Conformal Coating (Project 4033-001,Hazard Switch)";}
