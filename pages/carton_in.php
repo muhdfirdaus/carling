@@ -5,9 +5,15 @@ endif;
 
 include('../dist/includes/dbcon.php');
 include('product_cfg.php');
-	$carton_id = $_POST['carton_id'];
+
+    $query=mysqli_query($con,"select * from carton_info order by carton_id desc limit 1")or die(mysqli_error($con));
+    $row=mysqli_fetch_array($query);
+    $carton_id=$row['carton_id'];
+    $run_no =  preg_replace("/[^0-9,.]/", "", $carton_id);         
+    $carton_id = "IQ" . str_pad(($run_no +1), 6, '0', STR_PAD_LEFT);
 	$no_box = $_POST['no_box'];
 	$no = $_POST['model'];
+	$line = $_POST['line'];
 	$id = $_SESSION['id'];
 	$tmstmp = time(); 
 
@@ -79,12 +85,12 @@ include('product_cfg.php');
                 for($i=1;$i<=$no_box;$i++){
                     mysqli_query($con,"INSERT INTO carton_box(carton_id,box_id)VALUES('$carton_id','$box[$i]')")or die(mysqli_error($con));
                 }
-                mysqli_query($con,"INSERT INTO carton_info(carton_id,user_id,no_of_box,timestamp,model, qty, model_no)
-                VALUES('$carton_id','$id', '$no_box', '$tmstmp',  '$model',  '$qty',  '$model_no2')")or die(mysqli_error($con));
+                mysqli_query($con,"INSERT INTO carton_info(carton_id,user_id,no_of_box,timestamp,model, qty, model_no,line)
+                VALUES('$carton_id','$id', '$no_box', '$tmstmp',  '$model',  '$qty',  '$model_no2', '$line')")or die(mysqli_error($con));
                 echo "<script type='text/javascript'>alert('Data saved!');</script>";
                 
 
-                $query=mysqli_query($con,"select ip from printer_cfg where id=2")or die(mysqli_error($con));
+                $query=mysqli_query($con,"select ip from printer_cfg where name='Carton$line'")or die(mysqli_error($con));
 				$row=mysqli_fetch_array($query);
                 $ip=$row['ip'];
                 
@@ -104,6 +110,42 @@ include('product_cfg.php');
                 {
                     $weight = '12.5KG';
                 }
+                elseif($lblcode =="IQ-M011795.1-B1" )
+                {
+                    $weight = '8KG';
+                }
+                elseif(strpos($lblcode, 'M10795')!== false)
+                {
+                    $weight = '7.5KG';
+                }
+                elseif(strpos($lblcode, 'M10794')!== false)
+                {
+                    $weight = '7.5KG';
+                }
+                elseif(strpos($lblcode, 'M10475')!== false)
+                {
+                    $weight = '7.5KG';
+                }
+                elseif(strpos($lblcode, 'M009373')!== false)
+                {
+                    $weight = '7.5KG';
+                }
+                elseif(strpos($lblcode, 'M009370')!== false)
+                {
+                    $weight = '7.5KG';
+                }
+                elseif(strpos($lblcode, 'M011442')!== false)
+                {
+                    $weight = '22.96KG';
+                }
+                elseif(strpos($lblcode, 'M009801')!== false)
+                {
+                    $weight = '21.15KG';
+                }
+                elseif(strpos($lblcode, 'M010293')!== false)
+                {
+                    $weight = '22.76KG';
+                }
                 elseif(strpos($lblcode, 'M007739')!== false)
                 {
                     $weight = '17KG';
@@ -119,6 +161,14 @@ include('product_cfg.php');
                 elseif(strpos($lblcode, 'M005551')!== false)
                 {
                     $weight = '12.5KG';
+                }
+                elseif(strpos($lblcode, 'M012309')!== false)
+                {
+                    $weight = '15.75KG';
+                }
+                elseif(strpos($lblcode, 'M012217')!== false)
+                {
+                    $weight = '15.75KG';
                 }
                 else
                 {
@@ -141,7 +191,7 @@ include('product_cfg.php');
                 ^FO2150,730^FDNo. 95, Jalan i-Park 1/10,^FS
                 ^FO2050,730^FDKawasan Perindustrian i-Park,^FS
                 ^FO1950,730^FDBandar Indahpura,^FS
-                ^FO1850,730^FD8100 Kulai. Malaysia^FS
+                ^FO1850,730^FD81000 Kulai. Malaysia^FS
                 
                 ^FO2200,2690^FDILOQ^FS
                 ^FO2100,2690^FDYrttipellontie^FS
