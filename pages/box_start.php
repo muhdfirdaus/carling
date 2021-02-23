@@ -108,6 +108,7 @@ endif;
                                         <option value="CA-942-10047-003">CA-942-10047-003</option>
                                         <option value="CA-942-10047-101">CA-942-10047-101</option>
                                         <option value="CA-942-10047-102">CA-942-10047-102</option>
+                                        <option value="CA-942-10047-105">CA-942-10047-105</option>
                                         <option value="CA-942-10047-131">CA-942-10047-131</option>
                                         <option value="CA-942-10047-136">CA-942-10047-136</option>
                                         <option value="CA-946-10053-001">CA-946-10053-001</option>
@@ -118,6 +119,7 @@ endif;
                                         <option value="CA-942-10067-001">CA-942-10067-001</option>
                                         <option value="CA-942-10067-003">CA-942-10067-003</option>
                                         <option value="CA-942-10067-005">CA-942-10067-005</option>
+                                        <option value="CA-942-10067-009">CA-942-10067-009</option>
                                         <option value="CA-942-10067-011">CA-942-10067-011</option>
                                         <option value="CA-942-10067-012">CA-942-10067-012</option>
                                         <option value="CA-942-10085-003">CA-942-10085-003</option>
@@ -219,6 +221,7 @@ endif;
             // if(model=="CA-942-10047-002"){ noprod = 300;}
             if(model=="CA-942-10047-003"){ noprod = 300; rev_no="01";rev="J";desc="LIN Switch No Function LED Rev.J (SWITCH MODULE - LIN SLAVE)";}
             if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-101_J (Switch Board-DAF-KAMAZ)";}
+            if(model=="CA-942-10047-105"){ noprod = 300; rev_no="00";rev="J";desc="942-10047-105 Rev.J (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10046-003"){ noprod = 400; rev_no="00";rev="N";desc="LIN MASTER MODULE Bom Rev.N (Note : set as Phantom)";}
             if(model=="CA-942-10046-005"){ noprod = 400; rev_no="00";rev="P";desc="LIN MASTER MODULE Bom Rev.P (Note : set as Phantom)";}
             if(model=="CA-946-10053-001"){ noprod = 600;rev_no="02";rev="";desc="Finish Goods with Conformal Coating (Project 4033-001,Hazard Switch)";}
@@ -228,6 +231,7 @@ endif;
             if(model=="CA-942-10067-001"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - Red Indicators (Rev.G)";}
             if(model=="CA-942-10067-003"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - White Indicators (Rev.G)";}
             if(model=="CA-942-10067-005"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo - Orange Indicators (Rev.G)";}
+            if(model=="CA-942-10067-009"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Green Halo - White Indicators (Rev.G)";}
             if(model=="CA-942-10067-011"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Green Halo - Orange Indicators (Rev.G)";}
             if(model=="CA-942-10067-012"){ noprod = 600;rev_no="00"; rev="G";desc="HALO SWITCH Blue Halo (Rev.G)";}
             if(model=="CA-942-10085-003"){ noprod = 600;rev_no="00"; rev="J";desc="HALO Switch Blue Halo - White Indicators (Rev.J)";}

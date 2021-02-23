@@ -40,6 +40,11 @@ else{
         $desc = "^A0N,20,20^FO350,380^FD942-10047-101_H (Switch ^FS 
         ^A0N,20,20^FO350,405^FDBoard-DAF-KAMAZ)^FS ";
     }
+    elseif(strpos($model, '10047-105')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD942-10047-105^FS 
+        ^A0N,20,20^FO350,405^FDRev.J (Switch^FS 
+        ^A0N,20,20^FO350,430^FDBoard-DAF-KAMAZ)^FS ";
+    }
     elseif(strpos($model, '10047-131')!== false){
         $desc = "^A0N,20,20^FO350,380^FD942-10047-131 Red LED ^FS 
         ^A0N,20,20^FO350,405^FDRev.J (Switch ^FS  
@@ -86,6 +91,11 @@ else{
     elseif(strpos($model, '10067-005')!== false){
         $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue^FS 
         ^A0N,20,20^FO350,405^FDHalo - Orange Indicators^FS 
+        ^A0N,20,20^FO350,430^FD(Rev.G)^FS ";
+    }
+    elseif(strpos($model, '10067-009')!== false){
+        $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Green^FS 
+        ^A0N,20,20^FO350,405^FDHalo - White Indicators^FS 
         ^A0N,20,20^FO350,430^FD(Rev.G)^FS ";
     }
     elseif(strpos($model, '10067-011')!== false){
