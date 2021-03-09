@@ -80,6 +80,12 @@ include('product_cfg.php');
                                 $testmsg.=$sn.' on line '.$i.' not pass ICT Test yet!\n';
                             }
                         }
+                        $modelpieces = explode("-", $no);
+                        $modelsn = substr($sn, 0,5);
+                        if($modelpieces[2]!=$modelsn){
+                            $testfailed =1;
+                            $testmsg.=$sn.' on line '.$i.' is for wrong model!\n';
+                        }
                     }
                 }
             }
