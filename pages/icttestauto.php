@@ -44,16 +44,18 @@ if(file_exists($mydir)){
                     
                     set_time_limit(0);
                     
-                    if(isset($data[$panel])){
-                        if($data[$panel]['d']<$fdate){
+                    if(strlen($res)==1){
+                        if(isset($data[$panel])){
+                            if($data[$panel]['d']<$fdate){
+                                $data[$panel]['r'] = $res;
+                                $data[$panel]['d'] = $fdate;
+                            }
+                        }
+                        else{
+                            $data[$panel]['p'] = $panel;
                             $data[$panel]['r'] = $res;
                             $data[$panel]['d'] = $fdate;
                         }
-                    }
-                    else{
-                        $data[$panel]['p'] = $panel;
-                        $data[$panel]['r'] = $res;
-                        $data[$panel]['d'] = $fdate;
                     }
                 }
             }
