@@ -37,7 +37,7 @@ else{
         ^A0N,20,20^FO350,430^FDMODULE -LIN SLAVE)^FS ";
     }
     elseif(strpos($model, '10047-101')!== false){
-        $desc = "^A0N,20,20^FO350,380^FD942-10047-101_H (Switch ^FS 
+        $desc = "^A0N,20,20^FO350,380^FD942-10047-101_J (Switch ^FS 
         ^A0N,20,20^FO350,405^FDBoard-DAF-KAMAZ)^FS ";
     }
     elseif(strpos($model, '10047-105')!== false){
