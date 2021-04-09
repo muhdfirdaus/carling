@@ -222,7 +222,7 @@ endif;
             if(model=="CA-942-10047-003"){ noprod = 300; rev_no="01";rev="J";desc="LIN Switch No Function LED Rev.J (SWITCH MODULE - LIN SLAVE)";}
             if(model=="CA-942-10047-101"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-101_J (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10047-105"){ noprod = 300; rev_no="00";rev="J";desc="942-10047-105 Rev.J (Switch Board-DAF-KAMAZ)";}
-            if(model=="CA-942-10046-003"){ noprod = 400; rev_no="00";rev="N";desc="LIN MASTER MODULE Bom Rev.N (Note : set as Phantom)";}
+            if(model=="CA-942-10046-003"){ noprod = 400; rev_no="00";rev="P";desc="LIN MASTER MODULE Bom Rev.N (Note : set as Phantom)";}
             if(model=="CA-942-10046-005"){ noprod = 400; rev_no="00";rev="P";desc="LIN MASTER MODULE Bom Rev.P (Note : set as Phantom)";}
             if(model=="CA-946-10053-001"){ noprod = 600;rev_no="02";rev="";desc="Finish Goods with Conformal Coating (Project 4033-001,Hazard Switch)";}
             if(model=="CA-942-10048-001"){ noprod = 600; rev_no="00";rev="H";desc="Rheostat BOM Rev.H (SWITCH MODULE - LIN SLAVE)";}
