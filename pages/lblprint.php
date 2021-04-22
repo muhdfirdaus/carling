@@ -93,6 +93,10 @@ elseif(strpos($model, '10067-009')!== false){
     ^A0N,20,20^FO350,405^FDHalo - White Indicators^FS 
     ^A0N,20,20^FO350,430^FD(Rev.G)^FS ";
 }
+elseif(strpos($model, '10071-002')!== false){
+    $desc = "^A0N,20,20^FO350,380^FDUSB EMI VCHARGER^FS 
+    ^A0N,20,20^FO350,405^FD(Without Load Dump)^FS ";
+}
 elseif(strpos($model, '10067-011')!== false){
     $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Green^FS 
     ^A0N,20,20^FO350,405^FDHalo - Orange Indicators^FS 
