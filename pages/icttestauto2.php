@@ -1,7 +1,7 @@
 
 <h1>Don't close this page!</h1>
 <pre>
-This page is set to update logfile for Carling(2/2) packing system automatically.
+This page is set to update logfile for Carling(2/3) packing system automatically.
 </pre>
 
 <?php 
@@ -120,7 +120,6 @@ if(isset($data)){
 }
 
 
-echo "Last Updated on: ".date('d-m-Y H:i:s', time());
+echo "<script>document.location='icttestauto3.php?lastupdate=$lupdICT'</script>";
 
-header( "refresh:3600;url=icttestauto.php" );
 ?>
