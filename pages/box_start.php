@@ -130,6 +130,7 @@ endif;
                                         <option value="CA-942-10129-001">CA-942-10129-001</option>
                                         <option value="CA-942-10161-001">CA-942-10161-001</option>
                                         <option value="CA-942-10161-003">CA-942-10161-003</option>
+                                        <option value="CA-942-10161-005">CA-942-10161-005</option>
                                         <option value="CA-942-10168-001">CA-942-10168-001</option>
                                         <option value="CA-942-10169-001">CA-942-10169-001</option>
                                     </select>
@@ -243,6 +244,7 @@ endif;
             if(model=="CA-942-10129-001"){ noprod = 600;rev_no="00"; rev="A";desc="942-10129-001 Polaris (Carling)";}
             if(model=="CA-942-10161-001"){ noprod = 100;rev_no="02"; rev="A";desc="4045-001 Polaris LED BOARD";}
             if(model=="CA-942-10161-003"){ noprod = 100;rev_no="02"; rev="A";desc="4045-001 Polaris LED BOARD";}
+            if(model=="CA-942-10161-005"){ noprod = 600;rev_no="01"; rev="";desc="4045-001 Polaris LED Board";}
             if(model=="CA-942-10168-001"){ noprod = 600;rev_no="00"; rev="B";desc="94x-10168 Vent-Seat-Cabin";}
             if(model=="CA-942-10169-001"){ noprod = 100;rev_no="00"; rev="";desc="PCBA, Polaris Driver Modes Switch";}
             

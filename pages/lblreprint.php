@@ -135,6 +135,10 @@ else{
         $desc = "^A0N,20,20^FO350,380^FD4045-001 Polaris^FS 
         ^A0N,20,20^FO350,405^FDLED Board^FS  ";
     }
+    elseif(strpos($model, '10161-005')!== false){
+        $desc = "^A0N,20,20^FO350,380^FD4045-001 Polaris^FS 
+        ^A0N,20,20^FO350,405^FDLED Board^FS  ";
+    }
     elseif(strpos($model, '10085-003')!== false){
         $desc = "^A0N,20,20^FO350,380^FDHALO SWITCH Blue ^FS 
         ^A0N,20,20^FO350,405^FDHalo - White Indicators (Rev.J)^FS  ";
