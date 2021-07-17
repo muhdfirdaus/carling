@@ -223,6 +223,72 @@ else{
         ^XZ";
     
     }
+    elseif(strpos($model, '10161-001')!== false){
+    
+        $lbl = "^XA 
+    
+        ^FO5,5^GB630,2,3^FS
+    
+        ^A0N,28,25^FO20,20^FDModel - Rev^FS 
+        ^A0N,28,25^FO20,55^FD(M)^FS 
+    
+        ^A0N,45,25^FO180,30^FD$model-$rev_no-00^FS 
+
+        ^FO75,85^BY2^BCn,60,N^FDP$model-$rev_no-00^FS 
+    
+        ^FO5,160^GB630,2,3^FS
+    
+        ^A0N,28,25^FO20,180^FDQuantity^FS 
+        ^A0N,28,25^FO20,215^FD(Q)^FS 
+    
+        ^A0N,45,25^FO160,185^FD$qty^FS 
+    
+        ^FO75,240^BY2^BCn,60,N^FDQ$qty^FS 
+    
+        ^FO300,160^GB2,160,3^FS 
+    
+        ^A0N,28,25^FO350,180^FDWO^FS 
+        ^A0N,28,25^FO350,210^FD(O)^FS 
+    
+        ^A0N,45,25^FO420,185^FD$wo^FS 
+    
+        ^FO330,240^BY2^BCn,60,N^FDK$wo^FS 
+    
+        ^FO5,320^GB630,2,3^FS
+    
+        ^A0N,28,25^FO20,340^FDSupplier^FS 
+        ^A0N,28,25^FO20,375^FD(S)^FS 
+    
+        ^A0N,45,25^FO140,350^FDBEYONICS^FS 
+    
+        ^FO40,405^BY2^BCn,60,N^FDVBEYONICS^FS 
+    
+        ^FO320,320^GB2,160,3^FS 
+    
+        ^A0N,20,20^FO350,350^FDModel Description^FS 
+        $desc
+    
+        ^FO10,480^GB630,2,3^FS
+    
+        ^A0N,28,25^FO20,490^FDCarton ID^FS 
+        ^A0N,28,25^FO20,525^FD(C)^FS 
+    
+        ^A0N,45,25^FO140,500^FD$box_id^FS 
+    
+        ^FO40,550^BY2^BCn,60,N^FDS$box_id^FS 
+    
+        ^FO445,480^GB2,150,3^FS 
+    
+        ^A0N,20,20^FO450,500^FDDate $tmstmp^FS 
+        ^A0N,20,20^FO450,530^FD(L) Lot #$lot^FS 
+    
+        ^FO450,520^GB200,2,3^FS
+    
+        ^FO450,560^BY2^BCn,50,N^FDT$lot^FS 
+    
+        ^XZ";
+    
+    }
     else{
     
         $lbl = "^XA 
