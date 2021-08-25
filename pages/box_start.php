@@ -109,6 +109,7 @@ endif;
                                         <option value="CA-942-10047-101">CA-942-10047-101</option>
                                         <option value="CA-942-10047-102">CA-942-10047-102</option>
                                         <option value="CA-942-10047-105">CA-942-10047-105</option>
+                                        <option value="CA-942-10047-126">CA-942-10047-126</option>
                                         <option value="CA-942-10047-131">CA-942-10047-131</option>
                                         <option value="CA-942-10047-136">CA-942-10047-136</option>
                                         <option value="CA-946-10053-001">CA-946-10053-001</option>
@@ -217,6 +218,7 @@ endif;
             if(model=="CA-942-10027-001"){ noprod = 10; rev_no="00";rev="H"; desc="942-10027-001 rev. H Bom";}
             if(model=="CA-942-10047-001"){ noprod = 300; rev_no="02";rev="J"; desc="LIN SWITCH RED FUNCTION LED REV.J ( SWITCH MODULE -LIN SLAVE )";}
             if(model=="CA-942-10047-002"){ noprod = 300; rev_no="02";rev="J"; desc="LIN SWITCH GREEN FUNCTION LED REV.J ( SWITCH MODULE -LIN SLAVE )";}
+            if(model=="CA-942-10047-126"){ noprod = 600; rev_no="00";rev="J"; desc="942-10047-126_J Bom Red \ Red Led";}
             if(model=="CA-942-10047-131"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-131 Red LED Rev.J (Switch Board-DAF-KAMAZ)";}
             if(model=="CA-942-10047-136"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-136_J Bom Green \ Amber LED";}
             if(model=="CA-942-10047-102"){ noprod = 300; rev_no="00";rev="J"; desc="942-10047-102_J Bom (Amber LED)";}
